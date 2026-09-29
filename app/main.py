@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-
+  
 from app.parser import ParseError, parse_expense
 
 app = FastAPI(title="Expense Bot")
