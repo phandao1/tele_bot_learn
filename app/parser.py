@@ -17,7 +17,7 @@ class ParsedExpense:
 
 # số + đơn vị tuỳ chọn: 45k, 45000, 45.000, 1.5tr, 1,5tr
 AMOUNT_RE = re.compile(r"^(\d+(?:[.,]\d+)*)(k|tr|m)?$", re.IGNORECASE)
-MULTIPLIER = {"k": 1_000, "tr": 1_000_000, "m": 1_000_000}
+MULTIPLIER = {"k": 100, "tr": 1_000_000, "m": 1_000_000}
 
 CATEGORIES = {
     "đồ uống": ["cafe", "cà phê", "ca phe", "trà sữa", "tra sua", "trà", "bia"],
